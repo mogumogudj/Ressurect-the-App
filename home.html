@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Ressurect</title>
+    <title>RessurectHome</title>
 
     <script>
-        // Update the time in the status bar according to realtime
         function updateTime() {
             var currentTime = new Date();
             var hours = currentTime.getHours();
             var minutes = currentTime.getMinutes();
             var seconds = currentTime.getSeconds();
 
+            // Add leading zeros if necessary
             hours = (hours < 10 ? "0" : "") + hours;
             minutes = (minutes < 10 ? "0" : "") + minutes;
 
@@ -28,12 +28,6 @@
         // Update the time every second
         setInterval(updateTime, 1000);
     </script>
-    <script>
-        // Wait for 3s then go the home page
-        setTimeout(function() {
-            window.location.href = "home.html"; 
-        }, 3000); 
-    </script>
 </head>
 <body>
     <div class="status_bar">
@@ -44,6 +38,5 @@
             <div id="status_bar_battery"></div>
         </div>
     </div>
-    <div class="ressurect_logo"></div>
 </body>
 </html>
