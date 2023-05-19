@@ -1,6 +1,7 @@
 :root {
     --background: #FAFCEE;
     --green: #4F5F00;
+    --olive-green: #C1C89F;
     --black: #363537;
     --blue: #22266D;
     --purple: #833288;
@@ -11,6 +12,7 @@
     --font-family: 'Roboto Condensed', sans-serif;
 }
 
+/*Standaard CSS: algemeen*/
 html{
     width: 390px;
     height: 844px;
@@ -33,6 +35,11 @@ body {
     border-radius: 15px;
 }
 
+a {
+    text-decoration: none;
+}
+
+/*Status bar*/
 .status_bar {
     position: relative;
     top: 8px;
@@ -81,6 +88,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/*Logo*/
 .ressurect_logo
 {
   background-image : url(images/ressurect_logo.png);
@@ -88,4 +96,90 @@ body {
   background-position: center;
   width: 100%;
   height: 100%;
+}
+
+/*Bottom Nav*/
+.bottom_nav {
+    position: relative;
+    top: 764px;
+    width: 390px;
+    height: 80px;
+    color: var(--olive-green);
+    background-color: var(--green);
+    border-radius: 0 0 15px 15px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom_nav a {
+    color: var(--olive-green);
+}
+
+#navbtn1, #navbtn2 {
+    width: 145px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#scan {
+    position: relative;
+    bottom: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--green);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scan a {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: var(--olive-green);
+    background-image: url(images/scan.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+}
+
+#profile_icon {
+    height: 30px;
+    margin-bottom: 5px;
+    background-image: url(images/profile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+#new_project_icon {
+    height: 30px;
+    margin-bottom: 5px;
+    background-image: url(images/newproject.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+
+#community_icon {
+    height: 30px;
+    margin-bottom: 5px;
+    background-image: url(images/community.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+
+#settings_icon {
+    height: 30px;
+    margin-bottom: 5px;
+    background-image: url(images/settings.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
 }
