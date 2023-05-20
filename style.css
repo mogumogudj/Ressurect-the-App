@@ -138,11 +138,14 @@ a {
     background-size: 24px;
 }
 
+.ressurect_logo#logo_box {
+    border-bottom: 3px solid var(--black);
+}
+
 #logo_box {
     width: 160px;
     height: 100%;
     background-size: contain;
-    border-bottom: 3px solid var(--black);
 }
 
 #notifications_box {

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ressurect</title>
+
+    <script>
+        // Update the time in the status bar according to realtime
+        function updateTime() {
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+
+            hours = (hours < 10 ? "0" : "") + hours;
+            minutes = (minutes < 10 ? "0" : "") + minutes;
+
+            // Display the time in a specific format
+            var timeString = hours + ":" + minutes;
+
+            // Update the HTML element with the current time
+            document.getElementById("status_bar_time").textContent = timeString;
+        }
+
+        // Update the time every second
+        setInterval(updateTime, 1000);
+    </script>
+</head>
+<body>
+    <div class="status_bar">
+        <span id="status_bar_time"></span>
+        <div id="status_bar_icons">
+            <div id="status_bar_connection"></div>
+            <div id="status_bar_wifi"></div>
+            <div id="status_bar_battery"></div>
+        </div>
+    </div>
+    <div class="top_icons">
+        <div id="search_box">
+            <a href="" id="search_icon"></a>
+        </div>
+        <div class="ressurect_logo" id="logo_box"></div>
+        <div id="notifications_box">
+            <a href="" id="notifications_icon"></a>
+        </div>
+    </div>
+    <div class="bottom_nav">
+        <div id="navbtn1">
+            <a id="profile_link" href="profile.html">
+                <div id="profile_icon"></div>
+                <span>Profile</span>
+            </a>
+            <a id="new_project_link" href="new_project.html">
+                <div id="new_project_icon"></div>
+                <span>New Project</span>
+            </a>
+        </div>
+        <div id="scan">
+            <a href="scanner.html">
+                <div>
+                    <div id="scan_icon"></div>
+                </div>
+            </a>
+        </div>
+        <div id="navbtn2">
+            <a id="community_link" href="home.html">
+                <div id="community_icon"></div>
+                <span>Community</span> 
+            </a>
+            <a id="settings_link" href="settings.html">
+                <div id="settings_icon"></div>
+                <span>Settings</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
