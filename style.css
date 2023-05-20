@@ -5,6 +5,7 @@
     --olive-green: #C1C89F;
     --black: #363537;
     --blue: #22266D;
+    --light-blue: #5895DB;
     --purple: #833288;
     --red: #BF2323;
     --orange: #CE8415;
@@ -460,6 +461,26 @@ a:visited {
     background-color: var(--background);
     border-radius: 50%;
     margin-right: 16px;
+}
+
+/*scanner recognition*/
+.item_pointer {
+    width: 30px;
+    height: 30px;
+    background-color: var(--light-blue);
+    border-radius: 50%;
+    border: 5px solid var(--background);
+    position: absolute;
+}
+
+#pointer1 {
+    top: 200px;
+    left: 135px;
+}
+
+#pointer2 {
+    top: 400px;
+    left: 260px;
 }
 
 /*Bottom Nav*/
