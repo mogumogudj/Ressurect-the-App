@@ -30,9 +30,27 @@ html, body {
 
 body {
     background-color: var(--background);
+    position: relative;
     width: 390px;
     height: 844px;
-    border-radius: 15px;
+    border-radius: 16px;
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0;
+    margin-left: 16px;
+}
+
+h2 {
+    font-family: var(--font-title);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0;
 }
 
 a {
@@ -94,14 +112,253 @@ a {
   background-image : url(images/ressurect_logo.png);
   background-repeat : no-repeat;
   background-position: center;
-  width: 100%;
   height: 100%;
+}
+
+/*Top bar with logo and with(out) search and/or notifications*/
+.top_icons {
+    width: 100%;
+    margin-top: 14px;
+    height: 65px;
+    display: inline-flex;
+}
+
+#search_box {
+    width: 115px;
+    height: 100%;
+    display: flex;
+}
+
+#search_icon {
+    width: 115px;
+    height: 65px;
+    background-image: url(images/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+
+#logo_box {
+    width: 160px;
+    height: 100%;
+    background-size: contain;
+    border-bottom: 3px solid var(--black);
+}
+
+#notifications_box {
+    width: 115px;
+    height: 100%;
+    display: flex;
+}
+
+#notifications_icon {
+    width: 115px;
+    height: 65px;
+    background-image: url(images/notification.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+
+/*Class content contains all content boxes and dividers*/
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Content box including title and bannerimages*/
+.content_box {
+    width: 100%;
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;    
+}
+
+.banner_list {
+    width: 358px;
+    margin-left: 16px;
+    height: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#load_more {
+    background-image: url(images/load_more.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    width: 20px;
+    height: 160px;
+    position: absolute;
+    right: 0;
+    margin-top: 32px;
+}
+
+.project_banner {
+    width: 100px;
+    height: 133px;
+    border-radius: 8px;
+    background-color: var(--background);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+    /*projectbanner content*/
+    .project_banner_image {
+        width: 100%;
+        height: 96px;
+        border-radius: 8px 8px 0 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #glassholder_image {
+        background-image: url(images/glassholder.png);
+    }
+
+    #knifeholder_image {
+        background-image: url(images/knifeholder.png);
+    }
+
+    #pencilcase_image {
+        background-image: url(images/pencilcase.png);
+    }
+
+    .project_banner_title {
+        font-family: var(--font-family);
+        color: var(--black);
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 4px;
+        margin-top: 4px;
+    }
+
+    .project_banner_user {
+        font-family: var(--font-family);
+        color: var(--black);
+        width: 100%;
+        height: 17px;
+        font-size: 10px;
+        font-weight: 300;
+        margin-left: 4px;
+        display: flex;
+        align-items: center;  
+    }
+
+    .project_banner_user_image {
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #Wolf {
+        background-image: url(images/wolf.jpg);
+    }
+
+    .project_banner_user_name {
+        margin-left: 4px;
+        width: 83px;
+    }
+
+/*People box including name and profileimages*/
+.people_box {
+    width: 100%;
+    height: 132px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;    
+}
+
+.people_list {
+    width: 358px;
+    margin-left: 16px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.person_banner {
+    width: 60px;
+    height: 80px;
+    font-family: var(--font-family);
+    color: var(--black);
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.add_user {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(38px) translateY(46px);
+    background-color: var(--background);
+    background-image: url(images/add.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.person_user_image {
+    width: 60px;
+    height: 60px;
+    margin-top: 8px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+    /*List of other users by id*/
+    #Wouter {
+        background-image: url(images/wouter.jpg);
+    }
+
+    #Lukas {
+        background-image: url(images/lukas.jpg);
+        /*die kan ik ni zomaar ergens rippen haha dus kunt gij da fixen, of moet ik iemand anders pakken*/
+        background-color: var(--red);
+    }
+
+    #Tjerk {
+        background-image: url(images/tjerk.jpg);
+    }
+
+    #Tibo {
+        background-image: url(images/tibo.jpg);
+    }
+
+#load_more_people {
+    background-image: url(images/load_more.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    width: 20px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    margin-top: 38px;
+}
+
+/*Boderdivider for inbetween contentboxes*/
+.border_divider {
+    width: 160px;
+    height: 16px;
+    border-bottom: 3px solid var(--black);
 }
 
 /*Bottom Nav*/
 .bottom_nav {
-    position: relative;
-    top: 764px;
+    position: absolute;
+    bottom: 0px;
     width: 390px;
     height: 80px;
     color: var(--olive-green);
