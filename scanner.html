@@ -29,13 +29,34 @@
         setInterval(updateTime, 1000);
     </script>
 </head>
-<body>
-    <div class="status_bar">
+<body id="scanner">
+    <div class="status_bar" id="white_bar">
         <span id="status_bar_time"></span>
         <div id="status_bar_icons">
-            <div id="status_bar_connection"></div>
-            <div id="status_bar_wifi"></div>
-            <div id="status_bar_battery"></div>
+            <div id="status_bar_connection_white"></div>
+            <div id="status_bar_wifi_white"></div>
+            <div id="status_bar_battery_white"></div>
+        </div>
+    </div>
+    <div class="top_icons" id="white_icons">
+        <div id="search_box">
+            <a href="javascript:history.back()" id="return_icon_white"></a>
+            <a href="" id="flash_icon_white"></a>
+        </div>
+        <div id="logo_box"></div>
+        <div id="notifications_box">
+            <a href="" id="notifications_icon_white"></a>
+        </div>
+    </div>
+    <div class="scanner_options">
+        <div id="filter"></div>
+        <div id="search"></div>
+    </div>
+    <div class="scanner_nav">
+        <div id="scanner_button">
+            <a href="scanned.html">
+                <div>SCAN</div>
+            </a>
         </div>
     </div>
 </body>
