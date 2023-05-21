@@ -187,40 +187,31 @@ a:visited {
     display: flex;
 }
 
-#search_icon {
+#search_icon, #return_icon, #return_icon_white, #flash_icon_white, #notifications_icon, #notifications_icon_white {
     width: 115px;
     height: 65px;
-    background-image: url(images/search.png);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#search_icon {
+    background-image: url(images/search.png);
     background-size: 24px;
 }
 
 #return_icon {
-    width: 115px;
-    height: 65px;
     background-image: url(images/return.png);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 16px;
     margin-right: 50px;
 }
 
 #return_icon_white {
-    width: 115px;
-    height: 65px;
     background-image: url(images/return_white.png);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 16px;
 }
 
 #flash_icon_white {
-    width: 115px;
-    height: 65px;
     background-image: url(images/flash_white.png);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 24px;
 }
 
@@ -241,20 +232,12 @@ a:visited {
 }
 
 #notifications_icon {
-    width: 115px;
-    height: 65px;
     background-image: url(images/notification.png);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 24px;
 }
 
 #notifications_icon_white {
-    width: 115px;
-    height: 65px;
     background-image: url(images/notification_white.png);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 24px;
 }
 
@@ -422,7 +405,7 @@ a:visited {
 
     #Lukas {
         background-image: url(images/lukas.jpg);
-        /*die kan ik ni zomaar ergens rippen haha dus kunt gij da fixen, of moet ik iemand anders pakken*/
+        /*die kan ik ni zomaar ergens rippen haha dus kunt gij da fixen, of moet ik iemand anders pakken?*/
         background-color: var(--red);
     }
 
@@ -464,10 +447,9 @@ a:visited {
     align-items: center;
 }
 
-#filter {
+#filter, #search {
     width: 40px;
     height: 40px;
-    background-image: url(images/filter.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
@@ -476,17 +458,13 @@ a:visited {
     margin-left: 16px;
 }
 
-#search {
-    width: 40px;
-    height: 40px;
-    background-image: url(images/search.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60%;
-    background-color: var(--background);
-    border-radius: 50%;
-    margin-right: 16px;
-}
+    #filter {
+        background-image: url(images/filter.png);;
+    }
+
+    #search {
+        background-image: url(images/search.png);
+    }
 
 /*scanner recognition*/
 .item_pointer {
