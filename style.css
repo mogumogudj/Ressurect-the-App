@@ -62,12 +62,37 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-family: var(--font-title);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--green);
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
 
 a:visited {
     color: inherit; 
+}
+
+/*buttons*/
+.button_big {
+    width: 300px;
+    height: 60px;
+    background-color: var(--green);
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: var(--font-title);
+    color: var(--background);
+    font-size: 32px;
+    font-weight: 700;
 }
 
 /*Status bar*/
@@ -481,6 +506,89 @@ a:visited {
 #pointer2 {
     top: 400px;
     left: 260px;
+}
+
+/*scanned information*/
+.scan_information {
+    width: 100%;
+    height: 460px;
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    border-radius: 16px 16px 0 0;
+    color: var(--green);
+    font-family: var(--font-title);
+}
+
+.scan_information h1 {
+    margin-top: 16px;
+}
+
+#description_title {
+    margin-left: 16px;
+    margin-top: 24px;
+}
+
+#description_title strong, #description_title h3 {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+#description_title strong {
+    font-size: 18px;
+}
+
+#description_text {
+    margin: 16px 16px 0 16px;
+}
+
+.scan_information h2 {
+    margin-top: 64px;
+    margin-left: 16px;
+}
+
+.review_bar {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.emoticon {
+    width: 40px;
+    height: 40px;
+    border-radius: 35%;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.emoticon:active {
+    width: 60px;
+    height: 60px;
+}
+
+    /*Emotions reviewbar*/    
+    #happy {
+        background-image: url(images/happy.png);
+        background-color: var(--green);
+    }
+
+    #medium {
+        background-image: url(images/medium.png);
+        background-color: var(--orange);
+    }
+
+    #sad {
+        background-image: url(images/sad.png);
+        background-color: var(--red);
+    }
+
+.scan_information .button_big {
+    margin-top: 24px;
 }
 
 /*Bottom Nav*/

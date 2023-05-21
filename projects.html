@@ -28,12 +28,6 @@
         // Update the time every second
         setInterval(updateTime, 1000);
     </script>
-    <script>
-        // Wait for 2s then go the home page
-        setTimeout(function() {
-            window.location.href = "home.html"; 
-        }, 2000); 
-    </script>
 </head>
 <body>
     <div class="status_bar">
@@ -44,6 +38,43 @@
             <div id="status_bar_battery"></div>
         </div>
     </div>
-    <div class="ressurect_logo"></div>
+    <div class="top_icons">
+        <div id="search_box">
+            <a href="" id="search_icon"></a>
+        </div>
+        <div class="ressurect_logo" id="logo_box"></div>
+        <div id="notifications_box">
+            <a href="" id="notifications_icon"></a>
+        </div>
+    </div>
+    <div class="bottom_nav">
+        <div id="navbtn1">
+            <a id="profile_link" href="profile.html">
+                <div id="profile_icon"></div>
+                <span>Profile</span>
+            </a>
+            <a id="new_project_link" href="new_project.html">
+                <div id="new_project_icon"></div>
+                <span>New Project</span>
+            </a>
+        </div>
+        <div id="scan">
+            <a href="scanner.html">
+                <div>
+                    <div id="scan_icon"></div>
+                </div>
+            </a>
+        </div>
+        <div id="navbtn2">
+            <a id="community_link" href="home.html">
+                <div id="community_icon"></div>
+                <span>Community</span> 
+            </a>
+            <a id="settings_link" href="settings.html">
+                <div id="settings_icon"></div>
+                <span>Settings</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>

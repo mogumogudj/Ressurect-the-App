@@ -28,12 +28,6 @@
         // Update the time every second
         setInterval(updateTime, 1000);
     </script>
-    <script>
-        // Wait for 1s then go the home page
-        setTimeout(function() {
-            window.location.href = "scan_information.html"; 
-        }, 1000); 
-    </script>
 </head>
 <body id="scanner">
     <div class="status_bar" id="white_bar">
@@ -54,9 +48,17 @@
             <a href="" id="notifications_icon_white"></a>
         </div>
     </div>
-    <div class="scanner_options">
-        <div id="filter"></div>
-        <div id="search"></div>
+    <div class="scan_information">
+        <h1>5L Jerry Can</h1>
+        <div id="description_title"><strong>White</strong><h3>5L gallon.</h3></div>
+        <h3 id="description_text">These gallons are made out of plastic making them ideal for an upcycling project!</h3>
+        <h2>Is this information right?</h2>
+        <div class="review_bar">
+            <a href="" class="emoticon" id="happy"></a>
+            <a href="" class="emoticon" id="medium"></a>
+            <a href="" class="emoticon" id="sad"></a>
+        </div>
+        <a href="projects.html" class="button_big">Projects</a>
     </div>
     <div class="scanner_nav">
         <div id="scanner_button">
