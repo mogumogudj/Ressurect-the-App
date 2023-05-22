@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    
     <title>Ressurect</title>
 
     <script>
@@ -36,6 +45,44 @@
             <div id="status_bar_connection"></div>
             <div id="status_bar_wifi"></div>
             <div id="status_bar_battery"></div>
+        </div>
+    </div>
+    <div id="settings_user">
+        <div class="profile_picture_big_icon" id="Wolf"></div>
+        <div class="extrasmall_button">Edit profile</div>
+    </div>
+    <div class="searchbar">
+        <div class="searchbar_icon"></div>
+        <input type="text" placeholder="Search for a setting..." id="textfield">
+        <input type="submit" id="submit_button">
+    </div>
+    <div id="settings_box">
+        <div class="settings_group" id="content">
+            <p>CONTENT</p>
+            <ul>
+                <li><div class="setting_name_icon" id="setting_favourites"></div><h3 class="setting_name">Favourites</h3></li>
+                <li><div class="setting_name_icon" id="setting_friends"></div><h3 class="setting_name">Friends</h3></li>
+                <li><div class="setting_name_icon" id="setting_projects"></div><h3 class="setting_name">Projects</h3></li>
+            </ul>
+        </div>
+        <div class="settings_group" id="preferences">
+            <p>PREFERNCES</p>
+            <ul>
+                <li><div class="setting_name_icon" id="setting_account"></div><h3 class="setting_name">Account</h3></li>
+                <li><div class="setting_name_icon" id="setting_notifications"></div><h3 class="setting_name">Notifications</h3></li>
+                <li><div class="setting_name_icon" id="setting_privacy_security"></div><h3 class="setting_name">Privacy & Security</h3></li>
+                <li><div class="setting_name_icon" id="setting_social_media"></div><h3 class="setting_name">Social Media</h3></li>
+                <li><div class="setting_name_icon" id="setting_downloads"></div><h3 class="setting_name">Downloads</h3></li>
+            </ul>
+        </div>
+        <div class="settings_group" id="system">
+            <p>SYSTEM</p>
+            <ul>
+                <li><div class="setting_name_icon"  id="setting_appearance"></div><h3 class="setting_name">Appearance</h3></li>
+                <li><div class="setting_name_icon" id="setting_language"></div><h3 class="setting_name">Language</h3></li>
+                <li><div class="setting_name_icon" id="setting_help_support"></div><h3 class="setting_name">Help & Support</h3></li>
+                <li><div class="setting_name_icon" id="setting_about"></div><h3 class="setting_name">About</h3></li>
+            </ul>
         </div>
     </div>
     <div class="bottom_nav">

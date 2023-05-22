@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    
     <title>Ressurect</title>
 
     <script>
@@ -48,11 +57,14 @@
         </div>
     </div>
     <div id="user_information">
-        <div id="profile_picture"></div>
-        <div id="profile_name">Wolf Ver Elst</div>
+        <div class="profile_picture" id="Wolf"></div>
+        <div id="profile_name">
+            <div id="first_name">Wolf</div>
+            <div id="last_name">Ver Elst</div>
+        </div>
     </div>
     <div id="your_projects_tab" class="content_box">
-        <div id="content_topper">
+        <div id="header_topper">
             <h1>Your projects</h1>
             <a class="extrasmall_button">Edit</a>
         </div>
@@ -91,7 +103,7 @@
         <a id="load_more" href=""></a>
     </div>
     <div id="your_friends_tab" class="people_box">
-        <div class="people_topper">
+        <div id="header_topper">
             <h1>Your friends</h1>
             <a class="extrasmall_button">View all</a>
         </div>
