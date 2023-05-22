@@ -673,12 +673,20 @@ a:visited {
     margin-top: 16px;
 }
 
-.profile_picture_big_icon{
-    width: 100px;
-    height: 100px;
+.profile_picture_small_icon, .profile_picture_big_icon {
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 8px;
+}
+
+.profile_picture_small_icon{
+    width: 40px;
+    height: 40px;
+}
+
+.profile_picture_big_icon{
+    width: 100px;
+    height: 100px;
 }
 
 /*Settings content box*/
@@ -779,6 +787,143 @@ a:visited {
             background-image: url(images/about.png);
             background-size: 24px;
         }
+
+/*Projects pages: project tab containing title image and creator with favourite option*/
+#projects_box {
+    width: 100%;
+    height: 520px;
+    padding: 44px 0 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project_tab {
+    width: 332px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project_tab_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--red);
+}
+
+    /*possible project images*/
+    #jerrycanlamp_image {
+        background-image: url(images/jerrycanlamp.png);
+    }
+
+    #kitchengarden_image {
+        background-image: url(images/kitchengarden.jpg);
+    }
+
+    #jerrypack_image {
+        background-image: url(images/jerrypack.jpg);
+    }
+
+    #storagecontainer_image {
+        background-image: url(images/storagecontainer.jpg);
+    }
+
+.project_description_box {
+    width: 232px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 4px solid var(--green);
+    background-color: var(--background);
+    border-radius: 8px 8px 8px 20px;
+    padding-left: 8px;
+}
+
+.project_description_box.liked {
+    border: 3px solid var(--orange);
+}
+
+.favourite_icon {
+    width: 24px;
+    height: 24px;
+    background-image: url(images/favourite.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    position: relative;
+    left: 200px;
+    top: 1px;
+}
+
+.project_description_box.liked .favourite_icon {
+    background-image: url(images/favourited.png);
+}
+
+.project_description_box h2 {
+    color: var(--blue);
+    margin-left: 8px;
+}
+
+.project_creator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 9px;
+    right: 9px;
+}
+
+.project_creator p {
+    color: var(--green);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.project_description_box.liked .project_creator p {
+    color: var(--orange);
+}
+
+/*projectpage navigation between pages 1 to 3*/
+#project_pages_navigation {
+    width: 160px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#project_pages_navigation a {
+    color: var(--purple);
+    border: 4px solid var(--purple);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#project_pages_navigation a#current {
+    color: var(--red);
+    border: 4px solid var(--red);
+}
 
 /*Bottom Nav*/
 .bottom_nav {
