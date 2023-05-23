@@ -28,6 +28,7 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
 body {
@@ -1467,8 +1468,8 @@ a:visited {
     top: 178px;
     margin-bottom: 20px;
     /* deze lijnen of code zorgen ervoor dat de webcam de grootte van de app heeft */
-    /* transform: scale(1.85);
-    transform-origin: center; */
+    /*transform: scale(1.85);
+    transform-origin: center;*/
 
   }
   
