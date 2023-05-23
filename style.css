@@ -970,7 +970,7 @@ a:visited {
 }
 
 /*Project page single project*/
-.project_banner_image {
+.project_banner_image#tutorial1, .project_banner_image#tutorial2, .project_banner_image#tutorial3, .project_banner_image#project_page_location {
     width: 100%;
     height: 368px;
     background-position: center;
@@ -1027,6 +1027,10 @@ a:visited {
 
 #project_information.tutorial {
     height: 400px;
+    color: var(--background);
+}
+
+#project_information .button_big {
     color: var(--background);
 }
 
