@@ -38,12 +38,12 @@ body {
     border-radius: 16px;
 }
 
-body#scanner{
-    background-image: url(images/jerrycan.jpg);
-    background-size: cover;
+/* body#scanner{
+    /* background-image: url(images/jerrycan.jpg); */
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-}
+    background-position: center; */
+/* } */
 
 h1 {
     font-family: var(--font-title);
@@ -1358,3 +1358,62 @@ a:visited {
 #scanner_button a:visited {
     color: var(--black);
 }
+
+
+/* Scanner */
+#app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #webcam-container {
+    position: relative;
+    z-index: 0;
+    top: 178px;
+    margin-bottom: 20px;
+    /* deze lijnen of code zorgen ervoor dat de webcam de grootte van de app heeft */
+    /* transform: scale(1.85);
+    transform-origin: center; */
+
+  }
+  
+  #label-container {
+    position: relative;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+
+  }
+  
+  #scan-btn {
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4F5F00;
+    color: #FAFCEE;
+    border: solid 1px;
+    border-radius: 16px;
+  }
+
+  .high-confidence {
+      color: lime;
+      font-weight: 800;
+  }
+
+  .middle-confidence {
+      color: #CE8415;
+      font-weight: 800;
+  }
+
+  .low-confidence {
+      color: #BF2323;
+      font-weight: 800;
+  }
+
+  .background-red {
+    width: 200px;
+    background-color: red;
+  }

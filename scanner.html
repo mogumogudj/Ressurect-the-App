@@ -39,6 +39,7 @@
     </script>
 </head>
 <body id="scanner">
+    <!-- <div class="scanner-background"> -->
     <div class="status_bar" id="white_bar">
         <span id="status_bar_time"></span>
         <div id="status_bar_icons">
@@ -57,10 +58,30 @@
             <a href="" id="notifications_icon_white"></a>
         </div>
     </div>
-    <div class="item_recognized">
+
+
+<!--📷 Machine learning Start 📷-->
+    <div id="app-container">
+        <button id="scan-btn" type="button" onclick="init(), showImage()">Start</button>
+    
+        <div class="loading" style="display: none;">
+          <img src="loading.gif" alt="loading..." width="200px">
+        </div>
+        <div id="label-container"></div>
+        <div id="webcam-container" style="width: 390px; height: 844px;"></div>
+        
+        
+      </div>
+    </div>
+<!--📷 Machine learning Start 📷-->
+
+
+
+
+    <!-- <div class="item_recognized">
         <div class="item_pointer" id="pointer1"></div>
         <div class="item_pointer" id="pointer2"></div>
-    </div>
+    </div> -->
     <div class="scanner_options">
         <div id="filter"></div>
         <div id="search"></div>
@@ -72,5 +93,9 @@
             </a>
         </div>
     </div>
+     <!-- linked to machine learning model -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="scanner.js"></script>
 </body>
 </html>
