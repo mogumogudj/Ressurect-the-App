@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+    <title>Ressurect</title>
+
+    <script>
+        // Update the time in the status bar according to realtime
+        function updateTime() {
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+
+            hours = (hours < 10 ? "0" : "") + hours;
+            minutes = (minutes < 10 ? "0" : "") + minutes;
+
+            // Display the time in a specific format
+            var timeString = hours + ":" + minutes;
+
+            // Update the HTML element with the current time
+            document.getElementById("status_bar_time").textContent = timeString;
+        }
+
+        // Update the time every second
+        setInterval(updateTime, 1000);
+    </script>
+</head>
+<body>
+    <div class="status_bar absolute" id="white_bar">
+        <span id="status_bar_time"></span>
+        <div id="status_bar_icons">
+            <div id="status_bar_connection_white"></div>
+            <div id="status_bar_wifi_white"></div>
+            <div id="status_bar_battery_white"></div>
+        </div>
+    </div>
+    <div class="top_icons absolute">
+        <div id="search_box">
+            <a href="javascript:history.back()" id="return_icon_white"></a>
+        </div>
+        <div id="logo_box"></div>
+        <div id="notifications_box">
+            <a href="" id="notifications_icon_white"></a>
+        </div>
+    </div>
+    <div id="project_information" class="new_project">
+        <div class="project_banner_image" id="tutorial3"></div>
+    </div>
+    <div class="new_project_content">
+        <div id="new_project_content_steps" class="content_tile">
+            <h3>Steps</h3>
+            <select id="difficulty_selection">
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+                <option value="option4">4</option>
+                <option value="option5">5</option>
+            </select>
+        </div>
+        <h2>Step 1</h2>
+        <div id="new_project_content_step_title" class="content_tile">
+            <h3>Title</h3>
+            <input type="text" placeholder="Start typing...">
+        </div>
+        <div id="new_project_content_step_description" class="content_tile">
+            <h3>Step Description</h3>
+            <input type="text" placeholder="Start typing...">
+        </div>
+        <div id="new_project_content_step_image" class="content_tile">
+            <h3>Image</h3>
+            <div id="step_image_fill"></div>
+        </div>
+        <a href="profile.html" class="extrasmall_button">Next</a>
+    </div>
+    <div class="bottom_nav">
+        <div id="navbtn1">
+            <a id="profile_link" href="profile.html">
+                <div id="profile_icon"></div>
+                <span>Profile</span>
+            </a>
+            <a id="new_project_link" class="location">
+                <div id="new_project_icon"></div>
+                <span>New Project</span>
+            </a>
+        </div>
+        <div id="scan">
+            <a href="scanner.html">
+                <div>
+                    <div id="scan_icon"></div>
+                </div>
+            </a>
+        </div>
+        <div id="navbtn2">
+            <a id="community_link" href="home.html">
+                <div id="community_icon"></div>
+                <span>Community</span> 
+            </a>
+            <a id="settings_link" href="settings.html">
+                <div id="settings_icon"></div>
+                <span>Settings</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

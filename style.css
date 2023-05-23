@@ -1228,7 +1228,6 @@ a:visited {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    text-align: center;
 }
 
 .content_tile input {
@@ -1243,28 +1242,47 @@ a:visited {
     margin-bottom: 4px;
 }
 
-#new_project_content_description input {
-    width: 240px;
+#new_project_content_description input, #new_project_content_step_description input {
+    width: 232px;
 }
 
 .content_tile select {
     width: 210px;
-    background-color: var(--background);
-    border: 2px solid var(--green);
+    background-color: var(--black);
     border-radius: 8px;
     padding: 4px;
     font-family: var(--font-family);
     font-weight: 300;
-    color: var(--green);
+    color: var(--background);
     margin-bottom: 4px;
 }
 
 .title--text {
     width: 111px;
+    text-align: left;
 }
 
 .title--text p {
     margin-top: 0;
+}
+
+.new_project_content h2 {
+    color: var(--red);
+    margin-top: 0;
+}
+
+#step_image_fill {
+    width: 208px;
+    height: 88px;
+    background-color: grey;
+    background-image: url(/images/selectimage.png);
+    background-repeat: no-repeat;
+    background-size: 24%;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Bottom Nav*/
