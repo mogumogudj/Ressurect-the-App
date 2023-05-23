@@ -1417,3 +1417,8 @@ a:visited {
     width: 200px;
     background-color: red;
   }
+
+  #jerrycan-scan {
+    position: relative;
+    bottom: 100px;
+}
