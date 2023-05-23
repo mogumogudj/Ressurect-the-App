@@ -39,7 +39,7 @@
     </script>
 </head>
 <body>
-    <div class="status_bar">
+    <div class="status_bar absolute">
         <span id="status_bar_time"></span>
         <div id="status_bar_icons">
             <div id="status_bar_connection"></div>
@@ -47,12 +47,52 @@
             <div id="status_bar_battery"></div>
         </div>
     </div>
-    <div class="top_icons">
+    <div class="top_icons absolute">
         <div id="search_box"></div>
         <div id="logo_box"></div>
         <div id="notifications_box">
             <a href="" id="notifications_icon"></a>
         </div>
+    </div>
+    <div id="project_information" class="new_project">
+        <div class="project_banner_image" id="new_project_no_image"></div>
+    </div>
+    <div class="new_project_content">
+        <div id="new_project_content_title" class="content_tile">
+            <h3>Title</h3>
+            <input type="text" placeholder="Start typing...">
+        </div>
+        <div id="new_project_content_difficulty" class="content_tile">
+            <h3>Difficulty</h3>
+            <select id="difficulty_selection">
+                <option value="option1">EASY</option>
+                <option value="option2">MEDIUM</option>
+                <option value="option3">HARD</option>
+            </select>
+        </div>
+        <div id="new_project_content_tools" class="content_tile">
+            <div class="title--text">
+                <h3>Tools</h3>
+                <p>
+                    What tools are required for the project?
+                </p>
+            </div>
+            <input type="text" placeholder="Start typing...">
+        </div>
+        <div id="new_project_content_resources" class="content_tile">
+            <div class="title--text">
+                <h3>Resources</h3>
+                <p>
+                    Which items are needed to create this project?
+                </p>
+            </div>
+            <input type="text" placeholder="Start typing...">
+        </div>
+        <div id="new_project_content_description" class="content_tile">
+            <h3>Short Description</h3>
+            <input type="text" placeholder="Start typing...">
+        </div>
+        <a href="new_project_filled_in.html" class="extrasmall_button">Next</a>
     </div>
     <div class="bottom_nav">
         <div id="navbtn1">
