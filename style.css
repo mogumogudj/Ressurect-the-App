@@ -93,6 +93,22 @@ a:visited {
     border-radius: 8px;
 }
 
+.button_medium {
+    width: 150px;
+    height: 60px;
+    background-color: var(--green);
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: var(--font-title);
+    color: var(--background);
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .button_big {
     width: 300px;
     height: 60px;
@@ -953,10 +969,9 @@ a:visited {
 }
 
 /*Project page single project*/
-#project_banner_image {
+.project_banner_image {
     width: 100%;
     height: 368px;
-    background-image: url(images/jerrycanlamp.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -964,6 +979,23 @@ a:visited {
     position: relative;
     top: 24px;
 }
+
+    /*images*/
+    .project_banner_image#project_page_location {
+        background-image: url(images/jerrycanlamp.png);
+    }
+
+    .project_banner_image#tutorial1 {
+        background-image: url(images/jerrycan.jpg);
+    }
+
+    .project_banner_image#tutorial2 {
+        background-image: url(images/jerrycanempty.jpg);
+    }
+
+    .project_banner_image#tutorial3 {
+        background-image: url(images/jerrycanlamp.png);
+    }
 
 .status_bar.absolute {
     position: absolute;
@@ -990,6 +1022,11 @@ a:visited {
     position: relative;
     bottom: 24px;
     margin-top: 0;
+}
+
+#project_information.tutorial {
+    height: 652px;
+    color: var(--background);
 }
 
 #basic_info_project {
