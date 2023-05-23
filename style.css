@@ -103,6 +103,7 @@ a:visited {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 16px;
     font-family: var(--font-title);
     color: var(--background);
     font-size: 24px;
@@ -1025,7 +1026,7 @@ a:visited {
 }
 
 #project_information.tutorial {
-    height: 652px;
+    height: 400px;
     color: var(--background);
 }
 
@@ -1129,6 +1130,63 @@ a:visited {
 .project_creator#project_page_user {
     position: relative;
     left: 50px;
+}
+
+/*project steps*/
+.project_step {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#step_header {
+    width: 100%;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#step_number {
+    width: 88px;
+    height: 56px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--background);
+    background-color: var(--blue);
+    border-radius: 8px;
+}
+
+#step_title {
+    width: 263px;
+    height: 56px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    border-radius: 8px;
+}
+
+#step_description {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    margin-bottom: 24px;
 }
 
 /*Bottom Nav*/
